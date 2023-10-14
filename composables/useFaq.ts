@@ -7,7 +7,7 @@ export function useFaq() {
 
   async function fetchFaq() {
     const { data } = await storyblokApi.get("cdn/stories", {
-      version: "draft",
+      version: process.env.NODE_ENV === "production" ? "published" : "draft",
       starts_with: "faqs",
       is_startpage: false,
     });

@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const story = await useStoryblok("home", { version: "draft" });
+const story = await useStoryblok("home", {
+  version: process.env.NODE_ENV === "production" ? "published" : "draft",
+});
 </script>
 
 <template>
