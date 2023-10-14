@@ -34,7 +34,7 @@
         <p class="mb-2 text-white">Closed</p>
       </div>
       <div>
-        <img src="miles.png" alt="" />
+        <img src="~/public/miles.png" alt="" />
       </div>
     </div>
   </div>
